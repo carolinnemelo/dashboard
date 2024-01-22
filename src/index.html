@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard</title>
+    <script type="module" defer src="./js/sessionObject.js"></script>
+    <script type="module" defer src="./js/main.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+    <script src="https://kit.fontawesome.com/44ff6c67ff.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body id="body" class="d-flex flex-column vh-100 justify-content-between bg-img" style="background-image: url('https://images.unsplash.com/photo-1458682625221-3a45f8a844c7?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+        <header>
+            <div class="container-fluid text-center justify-content-center d-flex  mt-3">
+                <div class="badge rounded-pill text-bg-light border d-flex justify-content-center py-2 gap-5" style="width: 18rem;">
+                            <p id="hour" class="m-0"></p>
+                            <p id="date" class="m-0"></p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <main>
+            <div class="pb-4 d-flex justify-content-center"> 
+                <input type="text" class="bg-transparent inputDash focus-ring border-0 display-1 text-center" style="width: auto;" ></input>
+            </div>
+            <div class="text-center container-fluid">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 gy-2">
+
+                    <!-- links card -->
+                    <div class="col px-1">
+                        <div class="card h-100">
+                            <h5 class="card-header">Quick links</h5>
+                            
+                            <ul id="ulLinkList" class="card-body ulLink list-group list-group-flush p-0">
+                                <li class="sourceLi list-group-item">
+                                    <img src="" alt="">
+                                    <a href=""></a>
+                                </li>
+                            </ul>
+
+                            <div class="card-footer m-0 text-body-secondary">
+                                <button type="button" id="addLinkBtn">add link</button>
+                             
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <!-- weather card -->
+                    <div class="col px-1">
+                        <div class="card h-100">
+                            <h5 class="card-header">Weather</h5>
+                            <ul id="ulweather" class=" list-group list-group-flush w-100 ">
+                                <li id="liWeatherToday" class="d-flex justify-content-around list-group-item p-0">
+                                    <img id="imgToday" src="" alt="" style="width: 40%; height:auto">
+                                    <div style="width: 60%" class="d-flex justify-content-center flex-column">
+                                        <div class="d-flex justify-content-around">
+                                            <p class="h6 m-0 p-0">Today</p>
+                                        </div>
+                                        <div class="d-flex flex-column mt-2">
+                                            <p style="font-size: .8rem;" class="m-0 p-0" id="tempTodayElement"></p>
+                                            <p style="font-size: .8rem; text-transform: capitalize;" class="m-0 p-0" id="skyTodayElement" class="text-capitalize"></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li id="liWeatherTomorrow" class="d-flex justify-content-around list-group-item p-0">
+                                    <img id="imgTomorrow" src="" alt="" style="width: 40%; height:auto">
+                                    <div style="width: 60%" class="d-flex justify-content-center flex-column" >
+                                        <div class="d-flex justify-content-around">
+                                            <p class="h6 m-0 p-0">Tomorrow</p>
+                                        </div>
+                                        <div class="d-flex flex-column mt-2">
+                                            <p style="font-size: .8rem;" class="m-0 p-0" id="tempTomorrowElement"></p>
+                                            <p style="font-size: .8rem; text-transform: capitalize;" class="m-0 p-0" id="skyTomorrowElement" class="text-capitalize"></p>
+                                        </div>
+
+                                    </div>
+
+                                </li>
+                            </ul>
+
+                            
+                        </div>
+
+                    </div>
+
+                    <!-- jokes card -->
+                    <div class="col px-1">
+                        <div class="card h-100">
+                            <h5 class="card-header">Jokes</h5>
+                            <div class="card-body">
+                                <p id="joke"></p>
+                            </div>
+                        </div>
+        
+                    </div>
+
+                    <!-- notes card -->
+                    <div class="col px-1">
+                        <div class="card h-100">
+                            <h5 class="card-header">Notes</h5>
+                            <div class="card-body p-2">
+                                <textarea placeholder="What are you thinking?" id="notes" cols="20" rows="6" style="resize: none;" class="bg-transparent focus-ring w-100 h-100  border-0"></textarea>
+                            </div> 
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+       
+        
+        
+
+        <footer>
+            <div class="container text-center mb-3 d-flex justify-content-center">
+                <div class="badge rounded-pill text-bg-light border d-flex justify-content-center py-2 gap-2" style="width: 18rem;">
+                        <i class="fa-solid fa-rotate-right"></i>
+                        <button type="button" id="changeBackgroundBtn">Change background</button>
+                </div>
+            </div>
+
+        </footer>
+
+    </body>
+</html>
