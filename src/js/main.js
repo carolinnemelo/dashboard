@@ -391,5 +391,3 @@ async function getJokes() {
 
 
 // make a minimum size for the window
-
-// update time every second
