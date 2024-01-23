@@ -3,8 +3,15 @@ $grid-gutter-width: 0;
 $--bs-body-bg: #900;
 $focus-ring-opacity:    0;
 
+$gradient-color-1: rgb(94, 30, 123);
+$gradient-color-2: #2196F3;
 
+#changeBackgroundBtn,
+#hourBg {
+    background: linear-gradient(to right, $gradient-color-1, $gradient-color-2);
+    color: white;
 
+  }
 
 @import "bootstrap/scss/bootstrap";
 

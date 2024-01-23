@@ -2,7 +2,7 @@
 import '../scss/styles.scss';
 import * as bootstrap from 'bootstrap';
 import axios from 'axios';
-import {openAPIkey, accessKey, ninjaKey} from '../js/apis'
+import {openAPIkey, accessKey} from '../js/apis'
 
 
 let tempToday = "";
@@ -383,13 +383,12 @@ async function getJokes() {
 
 // change the style of the buttons
 
-// change responsiveness because it is very big when changes to tablet and separate change background button, dashboard name, and date/time in tablet, 
+// change responsiveness because it is very big when changes to tablet
+// separate change background button, dashboard name, and date/time in tablet, 
 // it is everything too close 
 // from tablet to mobile. 
 
 
 // make a minimum size for the window
-
-// add quotes, or other api
 
 // update time every second

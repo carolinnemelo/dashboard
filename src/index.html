@@ -16,9 +16,9 @@
     <body id="body" class="d-flex flex-column vh-100 justify-content-between bg-img" style="background-image: url('https://images.unsplash.com/photo-1458682625221-3a45f8a844c7?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
         <header>
             <div class="container-fluid text-center justify-content-center d-flex  mt-3">
-                <div class="badge rounded-pill text-bg-light border d-flex justify-content-center py-2 gap-5" style="width: 18rem;">
-                            <p id="hour" class="m-0"></p>
-                            <p id="date" class="m-0"></p>
+                <div id="hourBg" class="badge rounded-pill text-bg-light border-0 d-flex justify-content-center py-2 gap-5" style="width: 18rem;">
+                            <p id="hour" class="m-0 text-white"></p>
+                            <p id="date" class="m-0 text-white"></p>
                     </div>
                 </div>
             </div>
@@ -120,10 +120,13 @@
 
         <footer>
             <div class="container text-center mb-3 d-flex justify-content-center">
-                <div class="badge rounded-pill text-bg-light border d-flex justify-content-center py-2 gap-2" style="width: 18rem;">
-                        <i class="fa-solid fa-rotate-right"></i>
-                        <button type="button" id="changeBackgroundBtn">Change background</button>
-                </div>
+                <button type="button" id="changeBackgroundBtn" class="badge rounded-pill text-bg-light border-0 d-flex justify-content-center py-2 gap-1">
+                        <i class="fa-solid fa-rotate-right text-white"></i>
+                        <p class="m-0 p-0 text-white">
+                            Change background
+                            
+                        </p>
+                </button>
             </div>
 
         </footer>
