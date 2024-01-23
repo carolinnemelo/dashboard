@@ -64,7 +64,8 @@ inputDash.addEventListener("input", () => saveDashboardName())
 
 document.addEventListener('DOMContentLoaded', () => {
     inputDash.value = sessionObject.user.name;
-    getDateAndTime()
+    getDateAndTime();
+    setInterval(getDateAndTime, 10000);
     showLinksStoredInSessionObject()
     showNote();
     getJokes()
